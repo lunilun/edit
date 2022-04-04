@@ -2,7 +2,8 @@ const express = require('express');
 const fs = require('fs');
 
 var app = express();
-app.use('/js',express.static(__dirname+"/js"));
+app.use('/js', express.static(__dirname + "/js"));
+app.use('/Img',express.static(__dirname+"/Img"));
 
 var port = process.env.PORT || 3000; 
 
