@@ -69,6 +69,7 @@ function drawLine() {
     clickPos.length = 0;
 }
 function drawPoly() {
+
     if (checkFirstPos) startPos = clickPos[0];
 
     var line = two.makeLine(clickPos[1].x, clickPos[1].y, clickPos[0].x, clickPos[0].y);
