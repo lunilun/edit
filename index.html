@@ -6,8 +6,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.8.4/two.min.js"></script>
-    <script type="text/javascript" src="js/edit.js"></script>
+    <!-- <script type="text/javascript" src="js/edit.js"></script> -->
+    <script type="module" src="js/edit.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <title>SVG Edited</title>
 </head>
@@ -25,19 +25,15 @@
         <div class="cover">
             <div id="background"></div>
             <div id="palette"></div>
-            <div id="btns">
-                <button id="reset">초기화</button>
-                <button id="save">저장</button>
-                <button id="cancle">취소</button>
-            </div>
+            <div id="btns"></div>
         </div>
-        <div class="history">
+        <!-- <div class="history">
             <div class="title">
                 <span>히스토리</span>
                 <button id="undo"><img src="./Img/undo.png" alt="실행 취소" style="width: 25px; height: 25px;"></button>
             </div>
             <div class="lists"><ul id="his_List"></ul></div>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>

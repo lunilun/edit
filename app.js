@@ -1,3 +1,8 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+import path from 'path';
+const __dirname = path.resolve();
+
 const express = require('express');
 const fs = require('fs');
 
