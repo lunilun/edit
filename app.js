@@ -50,8 +50,8 @@ app.post("/save", (req, res) => {
 });
 
 //test
-app.get("/test",(req,res)=>{
-    fs.readFile("test.html",(err,data)=>{
+app.get("/test2",(req,res)=>{
+    fs.readFile("test2.html",(err,data)=>{
         if(err){
             res.writeHead(404,{"Content-Type":"text/plain"}); 
             res.write("404 ERROR"); 

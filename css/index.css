@@ -26,7 +26,7 @@ li {
 .wrap .cover #background {
     width: 100%;
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid rgba(0,0,0,.3);
     overflow: hidden;
 }
 
@@ -49,8 +49,9 @@ li {
     margin-top: 5px;
 }
 
-.wrap .history {
+.history {
     position: absolute;
+    display: none;
     right: 0;
     top: 0;
     width: 250px;
@@ -58,8 +59,7 @@ li {
     border: 1px solid black;
     background: white;
 }
-
-.wrap .history .title {
+.history .title {
     position: relative;
     width: 100%;
     height: 40px;
@@ -70,13 +70,12 @@ li {
     font-size: 20px;
 }
 
-.wrap .history .lists {
+.history .lists {
     height: calc(400px - 40px);
     overflow: scroll;
     overflow-x: hidden;
 }
-
-.wrap .history .title #undo {
+.history .title #undo {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -89,6 +88,7 @@ li {
 
 .wrap .cover #btns {
     position: absolute;
+    width: 100%;
     left: 0;
     bottom: -80px;
 }
@@ -98,4 +98,23 @@ li {
     width: 120px;
     height: 60px;
     border-radius: 20px;
+}
+
+.wrap .cover #btns .file{
+    position: absolute;
+    color: white;
+    right: 0; top: 0;
+}
+.wrap .cover #btns .file label{
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background: gray;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 60px;
+    text-align: center;
+}
+.wrap .cover #btns .file input {
+    display: none;
 }
